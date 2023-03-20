@@ -21,7 +21,8 @@ public class SelectionSort {
 			int min_idx = i;
 			for (int j=i+1;j<length;j++)
 			{
-				if (arr[j]<arr[min_idx])
+				if (arr[j]<arr[min_idx])//this ensures during the first iteration of outer 
+										//loop (i)....the smallest element of the entire array gets moved into first place
 					min_idx=j;
 			}
 			
